@@ -13,34 +13,35 @@ Frontend Technologies:
 
 Angular: The frontend is developed using the Angular framework, providing a modular and dynamic user interface that enhances user interaction and experience.
 JavaScript: Employing JavaScript for client-side scripting to create interactive and responsive features within the web application.
-Additional Technologies:
 
+Additional Technologies:
 LINQ (Language Integrated Query): Enhancing database queries and interactions through LINQ, improving code readability and maintainability.
 ASP.NET: Utilizing ASP.NET for web application development, ensuring high performance, security, and compatibility.
+
 Key Features:
 Service Categories:
-
 Users can add and browse services within various categories, allowing for a comprehensive range of offerings.
 User Profiles:
 
 Each user has a dedicated profile showcasing their offered services, ensuring transparency and accountability within the platform.
+
 Service Management:
-
 Users can effortlessly add, modify, or remove their services, providing flexibility and adaptability.
+
 Search and Discovery:
-
 A robust search functionality enables users to discover services based on categories, keywords, and other relevant criteria.
+
 Secure Transactions:
-
 Implementation of secure transaction mechanisms ensures the safety of financial interactions between service providers and users.
+
 Communication Channels:
-
 Integrated messaging or communication channels facilitate direct communication between service providers and users.
-Responsive Design:
 
+Responsive Design:
 The web application is designed to be responsive, ensuring a seamless user experience across various devices and screen sizes.
 Future Enhancements:
 Ongoing improvements and updates to enhance user experience, introduce new features, and address user feedback.
+
 Conclusion:
 In summary, the web application is a service-oriented platform developed with cutting-edge technologies, providing a user-friendly interface for service providers and users to engage in a dynamic and transparent marketplace for various services.
 
