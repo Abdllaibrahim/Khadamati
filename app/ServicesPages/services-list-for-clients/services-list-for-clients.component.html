@@ -1,0 +1,48 @@
+<h3 *ngIf="!services">Loading</h3>
+<section *ngIf="services">
+  <div class="container">
+    <div class="col-lg-6 text-center container p-3">
+      <form class="d-flex" role="search">
+        <select class="form-select me-2" #location>
+          <option>{{Loc}}</option>
+          <option *ngFor="let l of locations.Goverments">
+            {{l.governorate_name_en}}
+          </option>
+        </select>
+        <select class="form-select me-2" #category>
+          <option>{{Cat}}</option>
+          <option *ngFor="let l of categories">
+            {{l.name}}
+          </option>
+        </select>
+        <button class="btn btn-outline-danger" type="button"
+          (click)="search(location.value,category.value)">search</button>
+      </form>
+    </div>
+    <div class="row" style="height: fit-content;">
+      <div
+        class="col-lg-3 col-md-6 d-flex align-items-stretch justify-content-center mb-5"
+        *ngFor="let service of paginatedServices" (click)="Details(service.id)">
+        <div class="card" style="width: 100%;">
+          <img [src]="service.pictures![0].url"
+            class="card-img-top" alt="Service Image">
+          <div class="card-body">
+            <h6 class="card-title">{{service.name}}</h6>
+            <p style="margin: 0px;" class="card-text">{{service.price}} EGP</p>
+            <p style="margin: 0px;"><app-star-rating [rating]="service.rating"></app-star-rating></p>
+            <p style="margin: 0px;" class="card-text">{{service.ratings!.length}}
+              Clients</p>
+            <!-- <a (click)="Details(service.id)" class="btn btn-danger">More Details</a> -->
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <app-paginator *ngIf="services"
+      [sizeOfPage]="sizeOfPage"
+      [data]="services"
+      (sendedData)="GetData($event)">
+    </app-paginator>
+
+  </div>
+</section>
